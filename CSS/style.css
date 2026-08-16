@@ -510,7 +510,7 @@ max-width:none;
 
 @media(max-width:393px){
     .logo{
-        margin-bottom: 5px;
+        margin-bottom: 2px;
     }
     .about-text{
         font-size: 21px;
@@ -518,6 +518,10 @@ max-width:none;
     .product-grid{
     grid-template-columns:repeat(2,1fr) ;
     }
+    .about{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
     .btns{
         padding: 6px 7px;
         font-size: 12px;
