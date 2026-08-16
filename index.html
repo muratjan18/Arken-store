@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>ARKEN</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation"> 
+            <div class="container">
+                <div class="nav-block">
+                    <a href="#"><img src="images/ARKEN.svg" class="logo" alt="ARKEN"></img></a>
+                    <div class="nav-left">
+                        <button class="np act" value="all">Все</button>
+                        <button class="np" value="women">Женское</button>
+                        <button class="np" value="men">Мужское</button>
+                        <button class="np" value="baby">Детское</button>
+                    </div>
+                    <div class="nav-right">
+                        <div class="search-wrapper">
+                            <input type="text" class="poisk" placeholder="Поиск">
+                        </div>
+                        <div class="korzin-wrapper">
+                            <a href="index2.html"><img class="korr" src="images/SVG (1).svg" alt="">
+                                <a href="index2.html" class="korz">Корзина</a>
+                                <div class="korz__btn" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8"/>
+                                </svg>
+                                <p class="korZzz">.</p>    
+                                </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </nav>
+        <hr>
+    </header>
+    <main class="main">
+        <section class="about">
+            <div class="container">
+                <div class="about-title">
+                    <p>КОЛЛЕКЦИЯ 2026</p>
+                    <p class="about-text">Минимализм. Качество. Стиль.</p>
+                </div>
+                <button class="filter__toggle" id="filterToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                        <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <span>ФИЛЬТРЫ</span>
+                </button>
+                <div class="abtstn" id="filterPanel">
+                    <div class="about-buttons">
+                        <button class="btns active" value="all">Все</button>
+                        <button class="btns" value="women">Женское</button>
+                        <button class="btns" value="men">Мужское</button>
+                        <button class="btns" value="baby">Детское</button>
+                    </div>
+                    <div class="filt-sort">
+                        <p class="filter-text">Сортировка:</p>
+                        <select name="" id="myselect1" class="select1">
+                            <option value="def-item" selected>По умолчанию</option>
+                            <option value="sm-item" >Сначала дешевле</option>
+                            <option value="bg-item" >Сначала дороже</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="products">
+            <div class="container">
+                <p class="product-title">12 товаров</p>
+                <div class="product-grid">
+                    <div class="product-grid-item" value="60" data-id="1" data-name="Oversized Linen Shirt" data-price="60" data-img="images/main/Oversized Linen Shirt.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Oversized Linen Shirt.jpg" alt="Linen Shirt">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+                        </div>
+                            <p>Oversized Linen Shirt</p>
+                            <p>60 ₽</p>
+                        </div>
+                    <div class="product-grid-item" value="112" data-id="2" data-name="Slim Tailored Trousers" data-price="112" data-img="images/main/Slim Tailored Trousers.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Slim Tailored Trousers.jpg" alt="Trousers">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+                        </div>
+                        <p>Slim Tailored Trousers</p>
+                        <p>112 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value="84" data-id="3" data-name="Draped Midi Dress" data-price="84" data-img="images/main/Draped Midi Dress.jpg" >
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Draped Midi Dress.jpg" alt="Draped Midi">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+                        </div>
+                        <p>Draped Midi Dress</p>
+                        <p>84 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value="89" data-id="4" data-name="Classic Wool Coat" data-price="89" data-img="images/main/Classic Wool Coat.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Classic Wool Coat.jpg" alt="Wool Coat">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+                        </div>
+                        <p>Classic Wool Coat</p>
+                        <p>89 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value="126" data-id="5" data-name="Merino Crewneck" data-price="126" data-img="images/main/Merino Crewneck.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Merino Crewneck.jpg" alt="Merino Crewneck">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+                        </div>
+                        <p>Merino Crewneck</p>
+                        <p>126 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value="71" data-id="6" data-name="Pleated Wide-Leg Pants" data-price="71" data-img="images/main/Pleated Wide-Leg Pants.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Pleated Wide-Leg Pants.jpg" alt="Pants">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Pleated Wide-Leg Pants</p>
+                        <p>71 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value="32" data-id="7" data-name="Kids' Organic Cotton Set" data-price="32" data-img="images/main/Kids' Organic Cotton Set.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Kids' Organic Cotton Set.jpg" alt="Kids set">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Kids' Organic Cotton Set</p>
+                        <p>32 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value = "135" data-id="8" data-name="Structured Blazer" data-price="135" data-img="images/main/Structured Blazer.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Structured Blazer.jpg" alt="Blazer">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Structured Blazer</p>
+                        <p>135 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value = "65" data-id="9" data-name="Ribbed Tank Top" data-price="65" data-img="images/main/Ribbed Tank Top.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Ribbed Tank Top.jpg" alt=" Tank top">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Ribbed Tank Top</p>
+                        <p>65 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value = "102" data-id="10" data-name="Denim Straight Jeans" data-price="102" data-img="images/main/Denim Straight Jeans.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Denim Straight Jeans.jpg" alt="Jeans">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Denim Straight Jeans</p>
+                        <p>102 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value = "41" data-id="11" data-name="Kids' Puffer Jacket" data-price="41" data-img="images/main/Kids' Puffer Jacket.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Kids' Puffer Jacket.jpg" alt="Puffer Jacket">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Kids' Puffer Jacket</p>
+                        <p>41 ₽</p>
+                    </div>
+                    <div class="product-grid-item" value = "66" data-id="12" data-name="Cashmere Scarf" data-price="66" data-img="images/main/Cashmere Scarf.jpg">
+                        <div class="image-wrapper">
+                            <img class="product-photo" src="images/main/Cashmere Scarf.jpg" alt="Scarf">
+                            <div class="ddact">
+                                <p class="prplus">+</p>
+                                <span class="price">0 товаров</span>
+                                <p class="prmin">-</p>
+                            </div>
+
+                        </div>
+                        <p>Cashmere Scarf</p>
+                        <p>66 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="JS/main.js"></script>
+</body>
+</html>
